@@ -27,6 +27,16 @@
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
 }
 
+.show-text {
+    @import url('https://fonts.googleapis.com/css?family=Viga');
+    font-family: Viga, sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: rgb(89, 255, 0);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
 .mygtuko-apvalinimas {
     border-radius: 50px;
 }

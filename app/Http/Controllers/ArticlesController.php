@@ -46,6 +46,8 @@ class ArticlesController extends Controller
         $validated = $request->validated();
         $article->title = $validated['title'];
         $article->content = $validated['content'];
+        $article->date = $validated['date'];
+        $article->address = $validated['address'];
         $article->save();
 
         return redirect()->route('articles.show', ['article' => $article->id]);

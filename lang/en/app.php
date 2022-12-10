@@ -18,5 +18,6 @@ return [
         'username' => 'Username',
         'password' => 'Password',
         'remember_me' => 'Remember me',
+        'back_to_the_list' => 'Back to the list',
     ],
 ];

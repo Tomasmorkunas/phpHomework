@@ -18,5 +18,6 @@ return [
         'username' => 'Vartotojo vardas',
         'password' => 'Slaptažodis',
         'remember_me' => 'Prisiminti mane',
+        'back_to_the_list' => 'Atgal į sąrašą',
     ],
 ];
