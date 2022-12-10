@@ -5,9 +5,9 @@
         <div style="background-color: green; color: lime;">{{ session('status') }}</div>
     @endif
 
-    <h2>List of Conferences</h2>
+    <h2>{{__('app.conference_module.list_of_Conferences')}}</h2>
     @auth
-        <a href="{{ route('articles.create') }}"><button type="button" class="btn btn-primary mb-4">Create</button></a>
+        <a href="{{ route('articles.create') }}"><button type="button" class="btn btn-primary mb-4">{{__('app.conference_module.create')}}</button></a>
     @endauth
     @each('articles.partials.list', $articles, 'article')
 @endsection

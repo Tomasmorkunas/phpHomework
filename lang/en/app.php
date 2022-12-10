@@ -1,10 +1,22 @@
 <?php
 
 return [
-    'home_module' => [
-        'index_title' => 'Home Page',
-        'contact_title' => 'Contact Page',
+    'conference_module' => [
+        'list_of_Conferences' => 'List of Conferences',
+        'login' => 'Login',
+        'title' => 'Title',
+        'content' => 'Content',
+        'date' => 'Date',
+        'address' => 'Address',
         'welcome' => 'Welcome, :Name',
-        'apples' => '{0} There are none|[2,*] There are :count',
+        'create' => 'Create',
+        'edit' => 'Edit',
+        'delete' => 'Delete',
+        'update' => 'Update',
+        'back' => 'Back',
+        'logout' => 'Logout',
+        'username' => 'Username',
+        'password' => 'Password',
+        'remember_me' => 'Remember me',
     ],
 ];

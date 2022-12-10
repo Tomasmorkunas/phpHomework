@@ -12,9 +12,9 @@
 <body class="mainPageBody">
     <header>
         @guest
-            <a href="{{route('login')}}">Login</a>
+            <a href="{{route('login')}}">{{__('app.conference_module.login')}}</a>
         @else
-            <a class="logout" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+            <a class="logout" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{__('app.conference_module.logout')}}</a>
             <form id="logout-form" action="{{route('logout')}}" method="post" style="display: none;">
                 @csrf
 
@@ -28,7 +28,7 @@
         @endif
 
         @auth
-            <h3>{{__('app.home_module.welcome', ['name' => auth()->user()->username])}}</h3>
+            <h3>{{__('app.conference_module.welcome', ['name' => auth()->user()->username])}}</h3>
             <br>
         @endauth
 
