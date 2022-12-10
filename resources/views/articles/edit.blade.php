@@ -2,10 +2,13 @@
 
 @section('title', 'Article Edit Form')
 @section('content')
-        <form action="{{ route('articles.update', ['article' => $article->id]) }}" method="post" class="growtopia">
+        <form action="{{ route('articles.update', ['article' => $article->id]) }}" method="post">
             @csrf
             @method('PUT')
             @include('articles.partials.form')
-            <div><input type = "submit" value="Update"></div>
+            <div><input type = "submit" class="mt-4 btn btn-primary mygtuko-apvalinimas" value="Update"></div>
         </form>
+        <a href="{{route('articles.index')}}">
+            <div><input type = "submit" class="mt-2 btn btn-primary mygtuko-apvalinimas" value="  Back  "></div>
+        </a>
 @endsection

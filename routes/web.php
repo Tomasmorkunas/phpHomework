@@ -23,8 +23,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ArticlesController::class, 'index'])->name('articles.index');
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
-
 Route::resource('articles', ArticlesController::class);
 
 //auth

@@ -6,13 +6,31 @@
     height: 100%;
     background: rgb(149,0,255);
     background: linear-gradient(196deg, rgba(149,0,255,1) 0%, rgba(254,255,0,1) 100%) fixed;
+    padding: 20px;
 }
 
 .conference-block {
     text-align: center;
     border-style: double;
     margin-bottom: 10px; //isores atitraukimas
-    padding: 7px; //viduje atitraukimas
+    padding: 10px; //viduje atitraukimas
+}
 
-    width: 70%;
+.form-text {
+    @import url('https://fonts.googleapis.com/css?family=Viga');
+    font-family: Viga, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: rgb(89, 255, 0);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+.mygtuko-apvalinimas {
+    border-radius: 50px;
+}
+
+.login-body {
+    
 }

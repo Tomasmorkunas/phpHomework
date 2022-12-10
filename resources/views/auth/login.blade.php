@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<body class="login-body">
 <form action="{{ route('login') }}" method="post">
     @csrf
     <div>
