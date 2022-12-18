@@ -19,5 +19,9 @@ return [
         'password' => 'Password',
         'remember_me' => 'Remember me',
         'back_to_the_list' => 'Back to the list',
+        'conference_updated' => 'Conference updated',
+        'conference_deleted' => 'Conference deleted',
+        'conference_edit_form' => 'Conference Edit Form',
+        'conference_creation_form' => 'Conference Creation Form',
     ],
 ];

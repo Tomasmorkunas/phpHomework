@@ -30,9 +30,9 @@
         <label for="remember-input" class="login-label ">{{__('app.conference_module.remember_me')}}</label>
         <input type="checkbox" id="remember-input" name="remember" value="1">
     </div>
-    <input type="submit" class="btn btn-warning mygtuko-apvalinimas mt-3" value="{{__('app.conference_module.login')}}">
+    <input type="submit" class="btn btn-warning button-rounding mt-3" value="{{__('app.conference_module.login')}}">
     <a href="{{route('articles.index')}}">
-        <input type = "submit" class="mt-3 btn btn-warning mygtuko-apvalinimas" value="  {{__('app.conference_module.back')}}  ">
+        <input type = "submit" class="mt-3 btn btn-warning button-rounding" value="  {{__('app.conference_module.back')}}  ">
     </a>
 
 </form>

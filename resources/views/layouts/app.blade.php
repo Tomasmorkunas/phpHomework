@@ -14,8 +14,8 @@
         @guest
             <a href="{{route('login')}}">{{__('app.conference_module.login')}}</a>
         @else
-            <a class="logout" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{__('app.conference_module.logout')}}</a>
-            <form id="logout-form" action="{{route('logout')}}" method="post" style="display: none;">
+            <a class="logout" id="makeLogout" href="{{route('logout')}}">{{__('app.conference_module.logout')}}</a>
+            <form id="logoutForm" action="{{route('logout')}}" method="post" style="display: none;">
                 @csrf
 
             </form>

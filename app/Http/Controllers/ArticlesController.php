@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreArticleRequest;
 use App\Models\Article;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 
 class ArticlesController extends Controller
 {
@@ -61,7 +59,6 @@ class ArticlesController extends Controller
      */
     public function show($id)
     {
-//        abort_if(!isset($this->articles[$id]), 404);
         return view('articles.show', ['article' => Article::findOrFail($id)]);
     }
 
@@ -87,10 +84,10 @@ class ArticlesController extends Controller
     {
         $article = (new Article())->findOrFail($id);
         $validated = $request->validated();
-        $article->fill($validated); //uzpildo duomenimis objekta
+        $article->fill($validated);
         $article->save();
 
-        $request->session()->flash('status', 'Article updated');
+        $request->session()->flash('status', __('app.conference_module.conference_updated'));
         return redirect()->route('articles.index');
     }
 
@@ -105,7 +102,7 @@ class ArticlesController extends Controller
         $article = (new Article())->findOrFail($id);
         $article->delete();
 
-        session()->flash('status', 'Article deleted');
+        session()->flash('status', __('app.conference_module.conference_deleted'));
         return redirect()->route('articles.index');
     }
 }
